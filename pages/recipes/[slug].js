@@ -13,7 +13,7 @@ export const getStaticPaths = async () => {
 	});
 	const paths = res.items.map((item) => {
 		return {
-			params: { slug: item.fields.slug } //[{params{slug}}{}{}]
+			params: { slug: item.fields.slug }, //[{params{slug}}{}{}]
 		};
 	});
 	return {
@@ -29,9 +29,8 @@ export async function getStaticProps({ params }) {
 	});
 
 	return {
-		props: {
-			recipe: items[0]
-		}
+		props: {recipe: items[0]},
+			revalidate: 1
 	};
 }
 
