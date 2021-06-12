@@ -4,12 +4,12 @@ import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import Image from 'next/image';
 import Skeleton from '../../components/Skeleton';
 
-
-export const getStaticPaths = async () => {
-	const client = createClient({
+const client = createClient({
 	space: process.env.CONTENTFUL_SPACE_ID,
 	accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
 });
+
+export const getStaticPaths = async () => {
 	const res = await client.getEntries({
 		content_type: 'recipe'
 	});
