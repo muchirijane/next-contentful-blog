@@ -3,12 +3,13 @@ import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 
 import Image from 'next/image';
 import Skeleton from '../../components/Skeleton';
-const client = createClient({
+
+
+export const getStaticPaths = async () => {
+	const client = createClient({
 	space: process.env.CONTENTFUL_SPACE_ID,
 	accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
 });
-
-export const getStaticPaths = async () => {
 	const res = await client.getEntries({
 		content_type: 'recipe'
 	});
@@ -28,6 +29,12 @@ export async function getStaticProps({ params }) {
 		content_type: 'recipe',
 		'fields.slug': params.slug
 	});
+
+	if(items.length){
+		return{
+			redirect:{ destination: '/', permanent: false }
+		}
+	}
 
 	return {
 		props: {recipe: items[0]},
