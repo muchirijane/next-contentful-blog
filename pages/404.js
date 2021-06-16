@@ -1,7 +1,16 @@
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
 import Image from 'next/image';
 import Link from 'next/link';
 
 const ErrorPage = () => {
+	const router = useRouter();
+	useEffect(() => {
+		setTimeout(() => {
+			router.push('/');
+		}, 4000);
+	}, []);
+
 	return (
 		<div className="error-container">
 			<Image src="/404.svg" alt="Error svg image" width={500} height={500} />
