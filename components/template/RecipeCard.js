@@ -13,9 +13,9 @@ export default function RecipeCard({recipe}) {
 				<div className="info">
 					<h3>{title}</h3>
 			<h4>
-        Takes 
+        Takes {cookingTime} mins
 				<span role="img" alt="clock emoji">⏲</span>
-				{cookingTime} mins to cook
+				 to cook
 				</h4>
 			<div className="actions">
 				<Link href={`/recipes/${slug}`}>

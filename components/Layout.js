@@ -7,10 +7,10 @@ export default function Layout({ children }) {
 				<Link href="/">
 					<a>
 						<h1>
-							<span>Just Add</span>
-							<span>Marmite</span>
+							<span>Home Made</span>
+							<span>Chef</span>
 						</h1>
-						<h2>Spread The Joy</h2>
+						<h2>Be your own chef at home</h2>
 					</a>
 				</Link>
 			</header>
@@ -18,7 +18,7 @@ export default function Layout({ children }) {
 			<div className="page-content">{children}</div>
 
 			<footer>
-				<p>Copyright 2021 Just Add Marmite :)</p>
+				<p>Copyright &copy; {new Date().getFullYear() } Home Made chef <span>🍣 </span> </p>
 			</footer>
 		</div>
 	);

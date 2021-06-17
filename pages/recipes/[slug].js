@@ -48,7 +48,7 @@ export default function RecipeDetails({ recipe }) {
 	const {featuredImage, title, method, ingredients, cookingTime} = recipe.fields;
 	return <>
 		<div>
-			<Image src={`http:${featuredImage.fields.file.url}`}  height={featuredImage.fields.file.details.image.height}  width={featuredImage.fields.file.details.image.width} alt={featuredImage.fields.description}/>
+			<Image className='img' src={`http:${featuredImage.fields.file.url}`}  height={featuredImage.fields.file.details.image.height}  width={featuredImage.fields.file.details.image.width} alt={featuredImage.fields.description}/>
 		<h2 className="banner">{title}</h2>
 		<div className="info">
 			<p>Takes about {cookingTime} mins to cook</p>
@@ -63,13 +63,14 @@ export default function RecipeDetails({ recipe }) {
 		</div>
 		</div>
 		<style jsx>{`
+		 
 			h2,h3 {
           text-transform: uppercase;
         }
-        .banner h2 {
+        .banner  {
           margin: 0;
           background: #fff;
-          display: inline-block;
+          width: 50%;
           padding: 20px;
           position: relative;
           top: -60px;
