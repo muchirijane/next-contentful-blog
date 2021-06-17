@@ -1,7 +1,48 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Contentful-food-blog
+## Live Code - [Preview](https://next-contentful-blog-delta.vercel.app/)
+<!-- ctrl+shift+v : preview -->
+![Project Image](assets/food-blog-contentful.gif)
 
-## Getting Started
+---
 
+### Table of Contents
+You're sections headers will be used to reference location of destination.
+
+- [Description](#description)
+- [How To Use](#how-to-use)
+- [Author Info](#author-info)
+
+---
+
+## Live Code - [Preview](https://next-contentful-blog-delta.vercel.app/)
+
+## Description
+- I learnt a lot about how to use Next Js to build a blog and as a first project to learn the framework I got to understand how powerful it is. I was able to understand how to use `createClient` function from the contentful package. 
+- Connect contentful by obtaining the access token and space id. Then use getStatic props (asychronous function) to pass data as props to our component. 
+- Apart from that I was able to use Image component from Next Js to showcase the featured or thumnail images in contentful and store the image src domains since they were fetched externally. 
+
+### Feature add ons
+- Create the next and prev page inside the single post to make navigation easier for users. 
+
+
+#### Technologies
+
+- React
+- Next Js
+- Vercel
+
+
+[Back To The Top](Contentful-food-blog)
+
+---
+#### Installation
+```bash
+    Use a command Prompt and type : npm install
+    # or
+    npm i
+```
+
+## How To Use
 First, run the development server:
 
 ```bash
@@ -12,23 +53,13 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+ 
+## Author Info
+#### [Jane Muchiri junior developer ](https://github.com/muchirijane)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- Twitter - [@TracyCss](https://twitter.com/TracyCss)
+- Website - [Ui portfolio projects](https://github.com/muchirijane)
 
-## Learn More
+[Back To The Top](Contentful-food-blog)
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
