@@ -21,7 +21,7 @@ You're sections headers will be used to reference location of destination.
 - Connect contentful by obtaining the access token and space id. Then use getStatic props (asychronous function) to pass data as props to our component. 
 - Apart from that I was able to use Image component from Next Js to showcase the featured or thumnail images in contentful and store the image src domains since they were fetched externally. 
 
-### Feature add ons
+### Future add ons
 - Create the next and prev page inside the single post to make navigation easier for users. 
 
 
@@ -56,10 +56,10 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
  
 ## Author Info
-#### [Jane Muchiri junior developer ](https://github.com/muchirijane)
+#### [Jane Muchiri ](https://github.com/muchirijane)
 
 - Twitter - [@TracyCss](https://twitter.com/TracyCss)
-- Website - [Ui portfolio projects](https://github.com/muchirijane)
+- Website - [Ui portfolio projects](https://jane.vercel.app/)
 
 [Back To The Top](Contentful-food-blog)
 
